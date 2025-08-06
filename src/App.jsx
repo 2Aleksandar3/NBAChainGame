@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="/NBAChainGame">
         <Routes>
           <Route path="/" element={<SinglePlayer />} />
           <Route path="/multiplayer" element={<Multiplayer />} />
