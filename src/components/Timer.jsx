@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+import ShareModal from "./Modal";
 const Timer = ({
   gameOver,
   timeLeft,
@@ -7,6 +9,13 @@ const Timer = ({
   highScore,
   mode,
 }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+  const shareUrl = window.location.href;
+
   return (
     <div>
       {!gameOver && (
@@ -30,8 +39,15 @@ const Timer = ({
           <h2>Game Over! You made {sequence.length} links.</h2>
           <h2>Your highscore is {highScore} </h2>
           <button onClick={handlePlayAgain}>Play Again</button>
+          <button onClick={handleShowModal}>Share Your Score</button>
         </div>
       )}
+      <ShareModal
+        show={showModal}
+        handleClose={handleCloseModal}
+        score={sequence.length}
+        shareUrl={shareUrl}
+      />
     </div>
   );
 };

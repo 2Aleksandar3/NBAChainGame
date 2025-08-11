@@ -160,3 +160,101 @@
   filter: brightness(0) saturate(100%) invert(61%) sepia(75%) saturate(1836%)
     hue-rotate(332deg) brightness(95%) contrast(92%);
 }
+
+.custom-modal {
+  background-color: #1e1e1e !important;
+  color: white;
+  border-radius: 16px !important;
+  padding: 1rem;
+}
+
+.share-modal-title {
+  font-family: "Alfa Slab One" !important;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #efe5bd;
+}
+
+.share-button {
+  background-color: #747bff;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.share-button.x {
+  background-color: #000000;
+  color: white;
+}
+
+.share-button.x:hover {
+  background-color: #333333;
+}
+
+.share-button:hover {
+  background-color: #4850e1;
+}
+
+.share-button.facebook {
+  background-color: #3b5998;
+}
+.share-button.facebook:hover {
+  background-color: #2d4373;
+}
+
+.share-button.whatsapp {
+  background-color: #25d366;
+}
+.share-button.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+.share-button.reddit {
+  background-color: #ff4500;
+}
+.share-button.reddit:hover {
+  background-color: #d43900;
+}
+
+.share-button.discord {
+  background-color: #7289da;
+}
+.share-button.discord:hover {
+  background-color: #4e6e9e;
+}
+
+.share-button.email {
+  background-color: #9e9e9e;
+}
+.share-button.email:hover {
+  background-color: #616161;
+}
+
+.share-button.copy {
+  background-color: #4caf50;
+}
+.share-button.copy:hover {
+  background-color: #388e3c;
+}
+
+.close-button {
+  background-color: transparent;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ffcc00;
+  color: #1e1e1e;
+}
